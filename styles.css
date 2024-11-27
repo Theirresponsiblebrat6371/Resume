@@ -1,0 +1,252 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Make sure the body covers the full viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #000000;
+    color: #fff;
+    padding: 10px 20px; /* Adjusted padding for a balanced top and bottom space */
+    text-align: center; /* Center the header content */
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center; /* Vertically centers logo and nav */
+    justify-content: space-between; /* Logo on the left, links centered */
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    max-width: 800px; /* Optional: Limit width for better readability */
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #30e130;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #25b025;
+}
+
+/******************************************** navbar ********************************************************/
+
+.logo {
+    height: 60px;  /* Adjust the logo height as needed */
+    width: auto;
+    margin: 0 20px 0 0; /* Only right margin for spacing from nav */
+    display: inline-block;
+}
+
+nav {
+
+    display: flex;
+    justify-content: center; /* Center the links */
+    flex: 1; /* Allow nav to take available space */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjust space between nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px; /* Add padding around links for a larger clickable area */
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/************************************************experimental space ************************************************/
+
+.about-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-info p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+#about-me {
+    background-color: #111; /* Matches the intro section background */
+    color: white; /* Ensures text contrast */
+    padding: 20px; /* Adds spacing */
+
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the profile picture and text */
+}
+
+.profile-pic-about {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Ensure it matches desired size */
+    border-radius: 100%; /* Make it circular */
+    margin-left: 100px;
+    margin-right: 120px; /* Adds space between the picture and the text */
+
+}
+
+
+
+.about-info {
+    max-width: 600px; /* Adjust width as needed */
+}
+
+
+/***************************************************footer***************************************************/
+
+section {
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 140px; /* Adjust width as needed */
+    margin: 0 70px; /* Add margin to create space between buttons */
+}
+
+.icon-container {
+    position: relative;
+    width: 140px; /* Adjust as needed for button image size */
+    display: flex;
+    align-items: center; /* Center the items vertically */
+}
+
+
+
+.text-container-instagram {
+    position: relative;
+    width: 30px; /* Adjust size of overlay logo */
+    height: auto;
+    bottom: 75px;
+    right: 30px; /* Keep it to the left */
+}
+
+.text-container-x {
+    position: relative;
+    width: 30px; /* Adjust size of overlay logo */
+    height: auto;
+    bottom: 75px;
+    right: 25px; /* Keep it to the left */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 140px; /* Set a specific width for the buttons */
+}
+
+.button-image-container {
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Center items vertically */
+}
+
+
+.button-image-instagram {
+    width: 230px; /* Desired button width */
+    height: 160px; /* Maintain aspect ratio */
+}
+
+.button-image-x {
+    width: 220px; /* Desired button width */
+    height: 160px; /* Maintain aspect ratio */
+}
+
+.logo-overlay-x {
+    position: absolute;
+    width: 30px; /* Adjust size of overlay logo */
+    height: auto;
+    bottom: 35px;
+    left: 5px; /* Keep it to the left */
+    transform: translate(-50%, -50%); /* Center alignment */
+}
+
+.logo-overlay-instagram {
+    position: absolute;
+    width: 30px; /* Adjust size of overlay logo */
+    height: auto;
+    bottom: 35px;
+    right: 115px; /* Keep it to the left */
+    transform: translate(-50%, -50%); /* Center alignment */
+}
+
+/* Hover Effect */
+.button-container:hover .button-image-container {
+    transform: scale(1.05); /* Slightly enlarge the button image */
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #000000;
+    color: white;
+}
